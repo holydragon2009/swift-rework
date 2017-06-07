@@ -1,4 +1,4 @@
-# swift-rework
+# swift-prework
 iOS (swift) Pre-work: Tip Calculator App
 # Pre-work - *Tip Calculator App*
 **Tip Calculator App** is a tip calculator application for iOS.
