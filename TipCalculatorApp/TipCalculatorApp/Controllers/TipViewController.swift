@@ -36,6 +36,12 @@ class TipViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector:#selector(TipViewController.keyboardWillAppear(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector:#selector(TipViewController.keyboardWillDisappear(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        amountTextField.becomeFirstResponder()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -109,8 +115,9 @@ class TipViewController: UIViewController {
     
     func billAmountChanged(_ sender: UITextField) {
         if let text = sender.text, let tmp = Float(text) {
-            let number = (tmp * self.percent) + tmp + 3.0
+            let number = (tmp * self.percent) + tmp
             self.totalLabel.text = "$" + number.description
+            self.tipAmountLabel.text = "$" + (tmp * self.percent).description
         } else {
             self.totalLabel.text = "$0.00"
         }

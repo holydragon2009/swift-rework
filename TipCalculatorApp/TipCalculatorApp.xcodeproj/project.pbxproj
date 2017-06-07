@@ -275,6 +275,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F4ZV8232QT;
 				INFOPLIST_FILE = TipCalculatorApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cloudbridge.TipCalculatorApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -288,6 +289,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F4ZV8232QT;
 				INFOPLIST_FILE = TipCalculatorApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cloudbridge.TipCalculatorApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -314,6 +316,7 @@
 				20A0CC9F1EE7AB3F0062FE90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
