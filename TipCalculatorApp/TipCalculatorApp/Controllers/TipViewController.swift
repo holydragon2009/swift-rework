@@ -16,6 +16,7 @@ class TipViewController: UIViewController {
     @IBOutlet weak private var totalLabel:UILabel!
     @IBOutlet weak private var percentSegment:UISegmentedControl!
     
+    
     // MARK: - Private properties
     private var percent:Float = 0.15
     
@@ -41,6 +42,12 @@ class TipViewController: UIViewController {
         super.viewDidAppear(animated)
         
         amountTextField.becomeFirstResponder()
+        
+        let defaults = UserDefaults.standard
+        let defaultTipIndex = defaults.integer(forKey: "default_tip_index")
+        
+        self.percent = self.percentAtIndex(defaultTipIndex)
+        self.percentSegment.selectedSegmentIndex = defaultTipIndex
     }
 
     override func didReceiveMemoryWarning() {
@@ -116,8 +123,8 @@ class TipViewController: UIViewController {
     func billAmountChanged(_ sender: UITextField) {
         if let text = sender.text, let tmp = Float(text) {
             let number = (tmp * self.percent) + tmp
-            self.totalLabel.text = "$" + number.description
-            self.tipAmountLabel.text = "$" + (tmp * self.percent).description
+            self.totalLabel.text = "$" + number.formattedWithSeparator.description
+            self.tipAmountLabel.text = "$" + (tmp * self.percent).formattedWithSeparator.description
         } else {
             self.totalLabel.text = "$0.00"
         }

@@ -13,6 +13,7 @@
 		20A0CC991EE7AB3F0062FE90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A0CC971EE7AB3F0062FE90 /* LaunchScreen.storyboard */; };
 		20A0CCA21EE7ABC40062FE90 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A0CCA11EE7ABC40062FE90 /* TipViewController.swift */; };
 		20A0CCA41EE7AD8D0062FE90 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A0CCA31EE7AD8D0062FE90 /* SettingsViewController.swift */; };
+		4F1245331EEA9A2B0063DAC9 /* MyNumberFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1245321EEA9A2B0063DAC9 /* MyNumberFormat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		20A0CC9A1EE7AB3F0062FE90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20A0CCA11EE7ABC40062FE90 /* TipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 		20A0CCA31EE7AD8D0062FE90 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4F1245321EEA9A2B0063DAC9 /* MyNumberFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNumberFormat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				20A0CC951EE7AB3F0062FE90 /* Assets.xcassets */,
 				20A0CC971EE7AB3F0062FE90 /* LaunchScreen.storyboard */,
 				20A0CC9A1EE7AB3F0062FE90 /* Info.plist */,
+				4F1245321EEA9A2B0063DAC9 /* MyNumberFormat.swift */,
 			);
 			path = TipCalculatorApp;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				20A0CCA21EE7ABC40062FE90 /* TipViewController.swift in Sources */,
 				20A0CC8F1EE7AB3F0062FE90 /* AppDelegate.swift in Sources */,
 				20A0CCA41EE7AD8D0062FE90 /* SettingsViewController.swift in Sources */,
+				4F1245331EEA9A2B0063DAC9 /* MyNumberFormat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
