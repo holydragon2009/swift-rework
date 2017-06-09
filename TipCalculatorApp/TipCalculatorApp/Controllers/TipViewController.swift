@@ -118,6 +118,10 @@ class TipViewController: UIViewController {
         
         self.percent = self.percentAtIndex(index)
         self.billAmountChanged(self.amountTextField)
+        
+        let defaults = UserDefaults.standard
+        defaults.set(index, forKey: "default_tip_index")
+        defaults.synchronize()
     }
     
     func billAmountChanged(_ sender: UITextField) {
